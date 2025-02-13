@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahegel.Api", "Ahegel.Api\Ahegel.Api.csproj", "{5D6E8F9A-E986-45BD-B9FB-75103A4F653C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahegel.Contracts", "Ahegel.Contracts\Ahegel.Contracts.csproj", "{48CEEE60-D7BE-4A70-A4D1-4B25DC137E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahegel.Entities", "Ahegel.Entities\Ahegel.Entities.csproj", "{2BE9AC1C-8D36-4B97-A478-6E5162F36627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahegel.Repository", "Ahegel.Repository\Ahegel.Repository.csproj", "{6C0F3D96-ACB8-4EB5-9C32-8881CB261275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahegel.Api.Tests", "Ahegel.Api.Tests\Ahegel.Api.Tests.csproj", "{32734AED-DB24-4FDB-BB83-0692D536EB91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D6E8F9A-E986-45BD-B9FB-75103A4F653C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6E8F9A-E986-45BD-B9FB-75103A4F653C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6E8F9A-E986-45BD-B9FB-75103A4F653C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6E8F9A-E986-45BD-B9FB-75103A4F653C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CEEE60-D7BE-4A70-A4D1-4B25DC137E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CEEE60-D7BE-4A70-A4D1-4B25DC137E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CEEE60-D7BE-4A70-A4D1-4B25DC137E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CEEE60-D7BE-4A70-A4D1-4B25DC137E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE9AC1C-8D36-4B97-A478-6E5162F36627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE9AC1C-8D36-4B97-A478-6E5162F36627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE9AC1C-8D36-4B97-A478-6E5162F36627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE9AC1C-8D36-4B97-A478-6E5162F36627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0F3D96-ACB8-4EB5-9C32-8881CB261275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0F3D96-ACB8-4EB5-9C32-8881CB261275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0F3D96-ACB8-4EB5-9C32-8881CB261275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0F3D96-ACB8-4EB5-9C32-8881CB261275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32734AED-DB24-4FDB-BB83-0692D536EB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32734AED-DB24-4FDB-BB83-0692D536EB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32734AED-DB24-4FDB-BB83-0692D536EB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32734AED-DB24-4FDB-BB83-0692D536EB91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
