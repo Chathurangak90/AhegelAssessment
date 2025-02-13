@@ -28,7 +28,7 @@ namespace Ahegel.Tests
             _mockPatientService.Setup(service => service.GetPatients()).ReturnsAsync(patients);
 
             // Act
-            var result = await _controller.GetPatients();
+            var result = await _controller.GetPatientById();
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
@@ -40,10 +40,10 @@ namespace Ahegel.Tests
         {
             // Arrange
             var patient = new Patient { Id = 1, Name = "Chathuranga" };
-            _mockPatientService.Setup(service => service.GetPatient(1)).ReturnsAsync(patient);
+            _mockPatientService.Setup(service => service.GetPatientById(1)).ReturnsAsync(patient);
 
             // Act
-            var result = await _controller.GetPatient(1);
+            var result = await _controller.GetPatientById(1);
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
@@ -54,10 +54,10 @@ namespace Ahegel.Tests
         public async Task GetPatient_ReturnsNotFound_WhenPatientDoesNotExist()
         {
             // Arrange
-            _mockPatientService.Setup(service => service.GetPatient(1)).ReturnsAsync((Patient)null);
+            _mockPatientService.Setup(service => service.GetPatientById(1)).ReturnsAsync((Patient)null);
 
             // Act
-            var result = await _controller.GetPatient(1);
+            var result = await _controller.GetPatientById(1);
 
             // Assert
             Assert.IsType<NotFoundObjectResult>(result);

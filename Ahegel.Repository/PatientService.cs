@@ -38,7 +38,7 @@ namespace Ahegel.Repository
 
 
         // Retrieves a specific patient by ID with their records.
-        public async Task<Patient> GetPatient(int id) =>
+        public async Task<Patient> GetPatientById(int id) =>
             await _context.Patients.Include(p => p.Records).FirstOrDefaultAsync(p => p.Id == id && !p.IsDeleted);
 
         public async Task<Patient> CreatePatient(Patient patient)

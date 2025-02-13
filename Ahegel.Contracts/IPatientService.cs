@@ -15,7 +15,7 @@ namespace Ahegel.Contracts
         Task<List<Patient>> GetPatients();
 
         // Retrieves a specific patient by ID.
-        Task<Patient> GetPatient(int id);
+        Task<Patient> GetPatientById(int id);
 
         // Creates a new patient.
         Task<Patient> CreatePatient(Patient patient);

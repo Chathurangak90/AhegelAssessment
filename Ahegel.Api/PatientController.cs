@@ -17,12 +17,12 @@ namespace Ahegel.Api
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPatients() => Ok(await _patientService.GetPatients());
+        public async Task<IActionResult> GetPatientById() => Ok(await _patientService.GetPatients());
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPatient(int id)
+        public async Task<IActionResult> GetPatientById(int id)
         {
-            var patient = await _patientService.GetPatient(id);
+            var patient = await _patientService.GetPatientById(id);
             if (patient == null) return NotFound($"Patient with ID {id} not found.");
             return Ok(patient);
         }
@@ -34,7 +34,7 @@ namespace Ahegel.Api
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var createdPatient = await _patientService.CreatePatient(patient);
-            return CreatedAtAction(nameof(GetPatient), new { id = createdPatient.Id }, createdPatient);
+            return CreatedAtAction(nameof(GetPatientById), new { id = createdPatient.Id }, createdPatient);
         }
 
         [HttpPut("{id}")]
