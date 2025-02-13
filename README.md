@@ -34,7 +34,7 @@ This repository contains the service layer that interacts with patient data, pro
 ## **Technologies Used:**
 - **C#**  
 - **.NET Core**
-- - **PostgreSQL** as the database management system
+- **PostgreSQL** as the database management system
 - **Entity Framework Core (EF Core)** for data interaction
 - **Task-based Asynchronous Pattern (TAP)** for handling asynchronous methods
 
